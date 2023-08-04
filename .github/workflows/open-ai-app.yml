@@ -9,6 +9,11 @@ on:
   # Allow manual workflow trigger
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
